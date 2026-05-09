@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #fff4fb 0%, #ffd5e2 55%, #ffbfd2 100%);
+  color: #4c2a3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px;
+  background: rgba(255,255,255,0.98);
+  border-radius: 32px;
+  box-shadow: 0 22px 52px rgba(147, 70, 102, 0.18);
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,0.88);
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 2.4rem;
+  color: #b42159;
+}
+
+p {
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+
+.form-row {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 2px solid rgba(211, 74, 118, 0.35);
+  font-size: 1rem;
+  outline: none;
+  min-height: 50px;
+}
+
+button {
+  border: none;
+  border-radius: 18px;
+  padding: 16px 24px;
+  background: #b42159;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  min-height: 52px;
+}
+
+button:hover {
+  background: #8f1c4b;
+}
+
+.message {
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  display: none;
+  font-weight: 600;
+}
+
+.message.success {
+  display: block;
+  background: #f9e6eb;
+  color: #9b1740;
+}
+
+.message.error {
+  display: block;
+  background: #ffe3ea;
+  color: #b62f55;
+}
+
+.confirmed-list {
+  display: grid;
+  gap: 10px;
+}
+
+.counter {
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #b42159;
+}
+
+.confirmed-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #ffedf4;
+  padding: 12px 14px;
+  border-radius: 16px;
+  color: #662642;
+  font-weight: 600;
+}
+
+.remove-button {
+  border: none;
+  border-radius: 16px;
+  padding: 10px 14px;
+  background: #d85373;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.remove-button:hover {
+  background: #b03c57;
+}
+
+.link-row {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.link-row a {
+  text-decoration: none;
+  color: #b42159;
+  font-weight: 700;
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .link-row {
+    margin-top: 24px;
+  }
+}

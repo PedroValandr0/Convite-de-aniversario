@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirme sua presença🍓</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&family=Source+Code+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/convite-malu.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+  <script src="assets/js/firebase-config.js" defer></script>
+</head>
+<body>
+
+<!-- Floating background berries -->
+<div class="bg-berries" id="bgBerries"></div>
+
+<div class="card">
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="dots-top">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <h1>Você está<br>convidado(a)! 🍓</h1>
+    <div class="subtitle">✨ Festa de Aniversário ✨</div>
+  </div>
+
+  <!-- Strawberry Shortcake character image -->
+  <div class="char-wrap">
+    <img class="char-img" src="assets/img/moranguinho.jpeg" alt="Moranguinho" />
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+
+    <p class="intro">
+      A <span class="name">Malu</span> vai completar<br>
+      <span class="age">7 aninhos</span> e quer muito<br>
+      a sua presença nessa festa especial! 🎉
+    </p>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="icon">🗓️</span>
+        <div class="label">Data</div>
+        <div class="value">06/06/2026</div>
+      </div>
+      <div class="info-item">
+        <span class="icon">🕒</span>
+        <div class="label">Horário</div>
+        <div class="value">19:00h</div>
+      </div>
+      <div class="info-item" style="grid-column: span 2;">
+        <a href="https://www.google.com/maps?q=Buffet+-+Toca+do+Vovô+-+R.+Carlos+Luvison,+366+-+Parque+Bela+Vista,+Votorantim+-+SP,+18110-435" target="_blank" style="color: inherit; text-decoration: none; display: block;">
+        <span class="icon">📍</span>
+        <div class="label">Local</div>
+        <div class="value">Buffet - Toca do Vovô - R. Carlos Luvison, 366 - Parque Bela Vista, Votorantim - SP, 18110-435</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="divider">🍓 MALU 🍓</div>
+
+    <div class="rsvp-box">
+      <h2>Confirme sua presença!!!</h2>
+      <p>Para que possamos preparar tudo com muito carinho! 🎂</p>
+      <div class="rsvp-form">
+        <input id="guestName" type="text" placeholder="Digite seu nome" aria-label="Nome do convidado" />
+        <button id="confirmButton" class="rsvp-btn" type="button">
+          ✉️ Confirmar Presença
+        </button>
+      </div>
+      <div id="rsvpMessage" class="rsvp-note"></div>
+    </div>
+
+  </div>
+
+  <button id="secretAdminButton" class="secret-admin-button" aria-label="Acesso administrador"></button>
+
+  <!-- Footer -->
+  <div class="footer">
+    🍓🌸🍰🎀🌿🎉🍓🌸🍰🎀🌿🎉
+  </div>
+
+</div>
+
+<script src="assets/js/convite-malu.js" defer></script>
+</body>
+</html>
